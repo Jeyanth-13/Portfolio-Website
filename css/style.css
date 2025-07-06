@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-body {
+body, .offcanvas  {
   cursor: url('/Image/cursor.cur') 4 4, auto;
   background-color: #101010;
 }
@@ -424,4 +424,42 @@ ul li{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+/* Offcanvas Styles */
+.cus-btn-close{
+  background: url("../Image/close-icon.svg") center/1em auto no-repeat;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(5%) saturate(17%) hue-rotate(355deg) brightness(93%) contrast(86%);
+  transition: color 0.8s ease-in;
+
+  &:hover{
+    filter: brightness(0) saturate(100%) invert(69%) sepia(15%) saturate(11%) hue-rotate(13deg) brightness(96%) contrast(88%);
+  }
+}
+.cus-offcanvas{
+  height: 64vh !important;
+}
+
+/* Form styles*/
+.form-control.custom-forms, .form-control.custom-textarea{
+  background: #181818;
+  border: 1px solid #2f2f2f;
+  color: #fff;
+  transition: text-shadow 0.3s ease-out;
+  box-shadow: none !important;
+
+  &:hover{
+    border-color: #3b3b3b;
+  }
+  &:active, :focus{
+    border-color: #3b3b3b !important;
+    background: #181818 !important;
+  }
+}
+.form-floating > label.cus-form-label{
+  color: #575757 !important;
+}
+.custom-textarea{
+  height: 164px !important;
+  resize: none;
 }
