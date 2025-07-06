@@ -3,7 +3,6 @@
     margin: 0;
 }
 body, .offcanvas  {
-  cursor: url('/Image/cursor.cur') 4 4, auto;
   background-color: #101010;
 }
 
