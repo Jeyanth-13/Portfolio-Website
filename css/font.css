@@ -1,0 +1,121 @@
+@font-face {
+    font-family: poppins-black;
+    src: url(../font/poppins/Poppins-Black.ttf);
+    font-weight: bolder;
+  }
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../font/poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: poppins-semibold;
+    src: url(../font/poppins/Poppins-SemiBold.ttf);
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: poppins-medium;
+    src: url(../font/poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: poppins-regular;
+    src: url(../font/poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Nordiquepro-Bold;
+    src: url(../font/Nordiquepro/nordiquepro-bold.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: Nordiquepro-Semibold;
+    src: url(../font/Nordiquepro/nordiquepro-semibold.otf);
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: Nordiquepro-Regular;
+    src: url(../font/Nordiquepro/nordiquepro-regular.otf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: Nordiquepro-Light;
+    src: url(../font/Nordiquepro/nordiquepro-light.otf);
+    font-weight: 300;
+  }
+
+
+.font-pop-bold{
+  font-family: poppins-bold;
+}
+
+.font-pop-semibold{
+  font-family: poppins-semibold;
+}
+
+.font-pop-medium{
+  font-family: poppins-medium;
+}
+
+.font-pop-regular{
+  font-family: poppins-regular;
+}
+
+.font-nor-regular{
+  font-family: Nordiquepro-Regular;
+}
+
+.font-nor-light{
+  font-family: Nordiquepro-Light;
+}
+
+.font-nor-semibold{
+  font-family: Nordiquepro-Semibold;
+}
+
+.font-nor-bold{
+  font-family: Nordiquepro-Bold;
+}
+
+
+/* Font Size */
+.size-lg-12{
+  font-size: 12px;
+}
+.size-lg-14{
+  font-size: 14px;
+}
+.size-lg-16{
+  font-size: 16px;
+}
+.size-lg-18{
+  font-size: 18px;
+}
+.size-lg-20{
+  font-size: 20px;
+}
+.size-lg-32{
+  font-size: 32px;
+}
+.size-lg-60{
+  font-size: 60px;
+}
+.size-lg-90{
+  font-size: 90px;
+}
+.size-lg-110{
+  font-size: 110px;
+}
+
+/* Letter Spacing */
+.letter-spacing{
+  letter-spacing: 10px;
+}

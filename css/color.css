@@ -1,0 +1,30 @@
+.color-white{
+    color: #fff;
+}
+.color-white-1{
+    color: #c4c4c4;
+}
+.color-grey{
+    color: #858585;
+}
+.color-green{
+    color: rgb(15, 180, 15);
+}
+/* .cus-branding-gradient{
+    background: linear-gradient(90deg, #087738 0%, #87C696 50%, #C0E6B9 75%, #E9F8E7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.cus-branding-gradient-2{
+    background: linear-gradient(90deg, #087738 0%, #468D2F 25%, #84A325 50%, #C1BA1C 75%, #FFD013 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.spl-style{
+    background: linear-gradient(180deg, #FFF 0%, #686868 78.95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

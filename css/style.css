@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  cursor: url('/Image/cursor.cur') 4 4, auto;
+  background-color: #101010;
+}
+
+/* Button Styles */
+.custom-pri-btn{
+    background-color: #0F783C;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #23b361 inset;
+    font-size: 14px;
+    transition: 0.3s;
+    font-size: 12px;
+
+    &:hover{
+        background-color: #188547;
+        box-shadow: 0px 2px 5px #23b361 inset;
+    }
+}
+.custom-sec-btn{
+    background-color: #2B2B2B;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+
+    &:hover{
+        background-color: #262626;
+    }
+}
+
+/* Container Styles */
+.child-container-pri{
+    background-image: url('../Image/1st-fold.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child-container-sec{
+    padding: 4% 8%;
+}
+.child-container-ribbon{
+  padding: 6% 0;
+}
+.home-gradient{
+  height: 100vh !important;
+  background: linear-gradient(to bottom, transparent, #101010);
+  padding: 0 6%;
+  display: grid;
+  align-content: center;
+}
+.floting-style{
+    position: absolute;
+    bottom: 0;
+    width: 88%;
+}
+
+  /* DEMO-SPECIFIC STYLES */
+.typewriter {
+    overflow: hidden;             /* Hide overflow */
+  border-right: 0.15em solid #000;  /* Cursor effect */
+  white-space: nowrap;          /* Keep text on one line */
+  margin: 0 auto;               /* Center text */
+  letter-spacing: 0.05em;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+  
+.typing-cursor {
+    animation: blinkCursor 1s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  
+/* 2nd Fold Styles starts here */
+
+.para-text{
+  line-height: 72px;
+  padding: 12px 0;
+}
+.fold-title-container{
+    padding: 6px 6px;
+    gap: 6px;
+    border: #323232 1px solid;
+    border-radius: 20px;
+    width: fit-content;
+}
+.bendo-card{
+    border: #323232 1px solid;
+    padding: 16px;
+    border-radius: 8px;
+}
+.rectangle-sample{
+    width: 100% !important;
+    height: 128px;
+    background-color: #323232;
+    border-radius: 6px;
+}
+.rectangle-sample-2{
+    width: 100% !important;
+    height: 144px;
+    background-color: #323232;
+    border-radius: 6px;
+}
+.rectangle-sample-3{
+    width: 100% !important;
+    height: 486px;
+    background-color: #323232;
+    border-radius: 6px;
+}
+
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+  }
+  
+  .carousel-item {
+    color: #A6A6A6;
+    background-color: #232323;
+    padding: 6px 12px;
+    margin-right: 20px;
+    border-radius: 999px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carousel-gradient {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .carousel-gradient.left {
+    left: 0;
+    background: linear-gradient(to right, #101010 8%, transparent);
+  }
+  
+  .carousel-gradient.right {
+    right: 0;
+    background: linear-gradient(to left, #101010 8%, transparent);
+  }
+
+  .carousel-reverse{
+    animation: scrollReverse 25s linear infinite;
+  }
+
+  @keyframes scrollReverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* ✅ Responsive: stack items vertically on small screens */
+  @media (max-width: 768px) {
+    .carousel-track {
+      flex-direction: column;
+      animation: none;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+    }
+  
+    .carousel-item {
+      margin-right: 0;
+    }
+  
+    .carousel-gradient {
+      height: 40px;
+      width: 100%;
+    }
+  
+    .carousel-gradient.left {
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom, #0e0e0e 70%, transparent);
+    }
+  
+    .carousel-gradient.right {
+      bottom: 0;
+      top: auto;
+      right: 0;
+      background: linear-gradient(to top, #0e0e0e 70%, transparent);
+    }
+  }
+
+/* 3rd Fold Styles */
+.social-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  } 
+  
+  .icons{
+    background-color: #202020;
+    border-radius: 50%;
+    padding: 6px 8px;
+  }
+  .social-icons .icons > img {
+    font-size: 24px;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(5%) saturate(17%) hue-rotate(355deg) brightness(93%) contrast(86%);
+    transition: color 0.8s ease;
+  }
+  
+  .social-icons .icons > img:hover {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(15%) saturate(11%) hue-rotate(13deg) brightness(96%) contrast(88%);
+  }
+
+  .separator {
+  width: 2px;
+  height: 26px;
+  background-color: #353535;
+  opacity: 0.8;
+}
+.separator-hori{
+  height: 2px;
+  background-color: #353535;
+  width: 100%;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #222222;
+  padding: 16px 0px 16px 0px;
+
+  &:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+}
+/* Ribbon Styles */
+.ribbon-section {
+  background: linear-gradient(to right, #0c1312, #0c3321);
+  rotate: 0deg;
+}
+.ribbon-trip {
+    background: linear-gradient(to right, #0e1618, #0f5132);
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    rotate: 1deg;
+    width: 100%;
+    padding: 8px 0;
+    box-shadow: 0px 1px 2px #23b361 inset;
+}
+.ribbon-item {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.ribbon-item:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+.ribbon-divider {
+  font-size: 1.2rem;
+  color: #00aaff;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+  will-change: transform, opacity;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-container{
+    background-image: url('../Image/1st-fold.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 2% 0;
+}
+.custom-width{
+  width: 645px;
+}
+.home-gradient-reverse{
+  height: 50vh !important;
+  background: linear-gradient(to top, transparent, #101010);
+  padding: 0 6%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.footer-tags{
+  left: 42%;
+  bottom: 20%;
+}
+
+/* Project Card Testing */
+.project-card {
+  width: 24%;
+  height: 340px;
+  margin: 0.5%;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background: #424242;
+}
+
+.project-card img {
+  width: 100%;
+  height: 340px;
+  display: block;
+  transition: transform 0.4s ease;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+/* Overlay slide-up + fade-in */
+.project-card-overlay {
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+    left: 0;
+    background: linear-gradient(to top, rgb(25 25 25) 138%, transparent);
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+    height: 26%;
+}
+
+/* When group is hovered, reduce opacity for all */
+.card-hover-group:hover .project-card {
+  opacity: 0.4;
+  transition: all 0.4s ease;
+}
+
+/* Keep hovered card bright, scaled, with overlay visible */
+.card-hover-group .project-card:hover {
+  opacity: 1;
+  z-index: 2;
+  filter: none;
+}
+
+.card-hover-group .project-card:hover img {
+  opacity: 1;
+  object-fit: fill;
+  z-index: 2;
+}
+.glow-line {
+  gap: 12px;
+  animation: glowIn 1s ease forwards;
+  animation-delay: calc(var(--i) * 50s);
+  transition: text-shadow 0.3s ease-in-out;
+
+}
+
+.glow-line:hover .glow-word {
+  text-shadow:
+      0 0 5px #00ff95,
+      0 0 10px #00ff95,
+      0 0 20px #00ff95,
+      0 0 40px #00ff95;
+  transition: text-shadow 0.3s ease-out;
+}
+
+/* Animation Keyframes */
+@keyframes glowIn {
+  0% {
+    opacity: 0;
+    text-shadow:none;
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow:
+      0 0 5px #00ff95,
+      0 0 10px #00ff95,
+      0 0 20px #00ff95,
+      0 0 40px #00ff95;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(90deg, #087738 0%, #87C696 50%, #C0E6B9 75%, #E9F8E7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
