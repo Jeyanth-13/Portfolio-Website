@@ -40,7 +40,7 @@ a{
 
 /* Container Styles */
 .child-container-pri{
-    background-image: url('../Image/1st-fold.svg');
+    background-image: url('../image/1st-fold.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
