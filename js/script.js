@@ -84,3 +84,5 @@ glowText.addEventListener("mousemove", (e) => {
 glowText.addEventListener("mouseleave", () => {
   glowText.style.backgroundImage = `none`;
 });
+
+

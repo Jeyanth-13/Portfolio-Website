@@ -5,6 +5,10 @@
 body, .offcanvas  {
   background-color: #101010;
 }
+a{
+  color:#858585;
+
+}
 
 /* Button Styles */
 .custom-pri-btn{
@@ -436,13 +440,34 @@ ul li{
   }
 }
 .cus-offcanvas{
-  height: 64vh !important;
+  height: 420px !important;
+  padding: 16px 32px;
+  background-image: url('../Image/offcanvas-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #050505; */
+  border-radius: 32px 32px 0px 0px;
+  overflow: clip;
+}
+.overflow-clip{
+  overflow: clip;
+}
+.custom-partical-pos{
+  top: 10%;
+  left: 0;
+  width: 600px;
+  height: 600px;
+}
+.align_content{
+  justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* Form styles*/
 .form-control.custom-forms, .form-control.custom-textarea{
-  background: #181818;
-  border: 1px solid #2f2f2f;
+  background: #121212;
+  border: 1px solid #252525;
   color: #fff;
   transition: text-shadow 0.3s ease-out;
   box-shadow: none !important;
@@ -452,11 +477,12 @@ ul li{
   }
   &:active, :focus{
     border-color: #3b3b3b !important;
-    background: #181818 !important;
+    background: #121212 !important;
   }
 }
 .form-floating > label.cus-form-label{
-  color: #575757 !important;
+  color: #7C7C7C !important;
+  padding: 16px 8px;
 }
 .custom-textarea{
   height: 164px !important;

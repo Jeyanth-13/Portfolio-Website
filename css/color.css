@@ -10,6 +10,9 @@
 .color-green{
     color: rgb(15, 180, 15);
 }
+.color-red{
+    color: #FF4747;
+}
 /* .cus-branding-gradient{
     background: linear-gradient(90deg, #087738 0%, #87C696 50%, #C0E6B9 75%, #E9F8E7 100%);
     background-clip: text;
