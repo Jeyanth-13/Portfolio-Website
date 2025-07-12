@@ -312,7 +312,7 @@ ul li{
 }
 
 .footer-container{
-    background-image: url('../Image/1st-fold.svg');
+    background-image: url('../image/1st-fold.svg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 0 2% 0;
@@ -431,7 +431,7 @@ ul li{
 
 /* Offcanvas Styles */
 .cus-btn-close{
-  background: url("../Image/close-icon.svg") center/1em auto no-repeat;
+  background: url("../image/close-icon.svg") center/1em auto no-repeat;
   filter: brightness(0) saturate(100%) invert(35%) sepia(5%) saturate(17%) hue-rotate(355deg) brightness(93%) contrast(86%);
   transition: color 0.8s ease-in;
 
@@ -442,7 +442,7 @@ ul li{
 .cus-offcanvas{
   height: 420px !important;
   padding: 16px 32px;
-  background-image: url('../Image/offcanvas-bg.svg');
+  background-image: url('../image/offcanvas-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: #050505; */
