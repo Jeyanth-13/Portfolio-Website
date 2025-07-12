@@ -3,7 +3,7 @@
     margin: 0;
 }
 body, .offcanvas  {
-  background-color: #101010;
+  background-color: #040404;
 }
 a{
   color:#858585;
@@ -52,7 +52,7 @@ a{
 }
 .home-gradient{
   height: 100vh !important;
-  background: linear-gradient(to bottom, transparent, #101010);
+  background: linear-gradient(to bottom, transparent, #040404);
   padding: 0 6%;
   display: grid;
   align-content: center;
@@ -322,7 +322,7 @@ ul li{
 }
 .home-gradient-reverse{
   height: 50vh !important;
-  background: linear-gradient(to top, transparent, #101010);
+  background: linear-gradient(to top, transparent, #040404);
   padding: 0 6%;
   display: grid;
   align-content: center;
