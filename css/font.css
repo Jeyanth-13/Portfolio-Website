@@ -52,7 +52,14 @@
     font-weight: 300;
   }
 
+  @font-face {
+    font-family: Caveat;
+    src: url(../font/Caveat/Caveat.ttf);
+  }
 
+.font-cav{
+  font-family: caveat;
+}
 .font-pop-bold{
   font-family: poppins-bold;
 }
@@ -101,6 +108,9 @@
 }
 .size-lg-20{
   font-size: 20px;
+}
+.size-lg-30{
+  font-size: 32px;
 }
 .size-lg-32{
   font-size: 32px;

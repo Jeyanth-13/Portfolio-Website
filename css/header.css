@@ -4,7 +4,6 @@
   animation: navbarFadeIn 0.8s ease-out forwards;
   animation-delay: 0.3s;
 }
-
 @keyframes navbarFadeIn {
   0% {
     opacity: 0;
@@ -14,6 +13,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.justify-items-center{
+  justify-items: center;
 }
 .flare-overlay {
   position: absolute;
@@ -40,13 +42,6 @@
     opacity: 0.4;
   }
 }
-.cus-nav-bg{
-    /* background: linear-gradient(to bottom right, #185F37 0%, rgba(24, 24, 24, 0.00) 32%) bottom right / 50% 100% no-repeat, linear-gradient(to bottom left, #185F37 0%, rgba(24, 24, 24, 0.00) 32%) bottom left / 50% 100% no-repeat, linear-gradient(to top left, #185F37 0%, rgba(24, 24, 24, 0.00) 50%) top left / 50% 0% no-repeat, linear-gradient(to top right, #185F37 0%, rgba(24, 24, 24, 0.00) 50%) top right / 50% 0% no-repeat; */
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 1% 6%;
-}
 .custom-nav a{
     color: #838989;
     transition: 0.3s;
@@ -59,9 +54,14 @@
     }
 }
 .custom-navbar {
-  background: transparent;
-  transition: background-color 0.4s ease, box-shadow 0.3s ease;
   z-index: 1050;
+  border-radius: 64px;
+  border: 1px solid #2B2B2B;
+  width: 758px;
+  padding: 8px;
+  position:absolute;
+  background: rgb(75 75 75 / 10%);
+backdrop-filter: blur(5px);
 }
 
 .custom-navbar.scrolled {
