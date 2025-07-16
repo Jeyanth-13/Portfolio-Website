@@ -16,6 +16,7 @@
 }
 .justify-items-center{
   justify-items: center;
+  display: grid;
 }
 .flare-overlay {
   position: absolute;

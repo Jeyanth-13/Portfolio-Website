@@ -1,4 +1,4 @@
-const text = "Hello! i'm Jey";
+const text = "Hello! I'm Jey";
 const typingSpeed = 60;
 
 let i = 0;
