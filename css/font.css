@@ -109,6 +109,12 @@
 .size-lg-20{
   font-size: 20px;
 }
+.size-lg-22{
+  font-size: 22px;
+}
+.size-lg-24{
+  font-size: 24px;
+}
 .size-lg-30{
   font-size: 32px;
 }
@@ -125,7 +131,35 @@
   font-size: 110px;
 }
 
-/* Letter Spacing */
-.letter-spacing{
+/* Special Text */
+.project-title{
+  padding: 8px 0 16px 0;
+  border-bottom: 2px solid #323232;
+  margin-bottom: 16px;
+}
+.Sub_title{
   letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.separator {
+  width: 2px;
+  height: 16px;
+  background-color: #323232;
+  opacity: 0.8;
+  display: inline-block;
+}
+.separator-hori{
+  height: 2px;
+  background-color: #202020;
+  width: 100%;
+  display: inline-block;
+}
+.dot-separator{
+  width: 4px;
+  height: 4px;
+  background-color: #323232;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px 0 4px;
 }
