@@ -16,7 +16,7 @@
 .color-yellow{
     color: #d9ff00;
 }
-/* .cus-branding-gradient{
+/* .cus-branding-gradient label{
     background: linear-gradient(90deg, #087738 0%, #87C696 50%, #C0E6B9 75%, #E9F8E7 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -33,4 +33,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.border-top{
+    border-top: #323232 !important;
 }
