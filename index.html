@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
@@ -14,31 +15,32 @@
 <body class="container-fluid font-pop-regular color-white">
     <div class="row justify-content-center">
         <!-- Header Section -->
-        <section class="sticky-top justify-items-center">
+        <section class="sticky-top">
             <nav class="navbar navbar-expand-lg animate-on-load custom-navbar mt-3">
                 <div class="flare-overlay"></div>
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="image/logo.svg" class="portfolio-logo mb-2 pb-1"
-                            alt="Logo"></a>
                     <!-- Mobile Toggle -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                        <div class="navbar-nav custom-nav font-medium size-lg-12" style="gap: 24px;">
+                    <a class="navbar-brand" href="#"><img src="image/logo.svg" class="portfolio-logo mb-2 pb-1" alt="Logo"></a>
+                    <div class="order-lg-3 d-flex">
+                        <button type="button" class="d-none d-md-block btn btn-secondary custom-sec-btn me-2"><span><img
+                                    src="image/download_icon.svg" alt="download-icon" class="mb-1"></span></button>
+                        <button type="button" class="btn btn-primary custom-pri-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Let's Connect</button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-center ps-3" id="navbarNavAltMarkup">
+                        <div class="navbar-nav custom-nav font-medium size-lg-12">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                             <a class="nav-link" href="#">My Works</a>
                             <a class="nav-link" href="#">Contact</a>
                         </div>
-
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-secondary custom-sec-btn me-2"><span><img
-                                    src="image/download_icon.svg" alt="download-icon" class="mb-1"></span></button>
-                        <button type="button" class="btn btn-primary custom-pri-btn" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Let's Connect</button>
+                        <div class="d-none d-sm-block d-md-none border-top py-3">
+                            <button type="button" class="btn btn-secondary custom-sec-btn"><span><img src="image/download_icon.svg" alt="download-icon" class="mb-1  me-2"></span>Download Resume</button>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -50,19 +52,19 @@
                     <div class="typing-container">
                         <h1 class="font-pop-semibold size-lg-110 text-center typewriter" id="typing-text"></h1>
                     </div>
-                    <p class="font-nor-regular size-lg-90 cus-branding-gradient glow-line m-0"><span
-                            class="glow-word me-3">Product</span><span class="glow-word">Designer</span></p>
-                </div>
+                    <div class="font-nor-regular size-lg-90 cus-branding-gradient glow-line d-inline">
+                        <label class="glow-word reveal-text"  id="role-title"></label>
+                        <label class="glow-word me-3">Designer</label>
+                    </div>
                 <!-- <p class="font-pop-regular spl-style text-center floting-style">Design with Passion, Create with Purpose</p></div> -->
         </section>
         <!-- About my Design - Section -->
         <section class="col-md-12 child-container-sec">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 mb-lg-0 mb-md-3">
                     <div class="info-card">
-                        <div class="rectangle-sample-3 ">
+                        <div class="profile_image">
                             <div class="info_image_gradient"></div>
-                            <!-- <img src="image/jeyanth-4.jpg" alt="" class="rectangle-sample-3"> -->
                         </div>
                         <div class="info-details">
                             <h4 class="font-nor-semibold size-lg-24 mb-2">Jeyanth Ravichandran</h4>
@@ -106,9 +108,9 @@
                                 class="cus-branding-gradient-2 font-nor-semibold">Vanakkam Makkaleh</span></p>
                     </div>
                     <div class="color-grey size-lg-16 font-pop-light">
-                        <p><span class="size-lg-16 me-2">As a designer,</span>With over 4+ years of experience in
+                        <p><span class="size-lg-16 me-2 color-white">As a designer,</span>With over 4+ years of experience in
                             UX/UI design, I approach every project with one core belief:</p>
-                        <p class="font-cav size-lg-32">" Always design have purpose "</p>
+                        <p class="color-white font-cav size-lg-32">" Always design have purpose "</p>
                         <p>My work spans SaaS platforms, web, and mobile applications—cutting through clutter to design
                             intuitive, human-centered interfaces. From AI-powered tools to data-driven dashboards, I
                             translate
@@ -292,7 +294,7 @@
             </div>
         </section>
         <!-- UX work - Section -->
-        <section class="col-md-12 child-container-sec">
+        <!-- <section class="col-md-12 child-container-sec">
             <div class="text-center mb-4">
                 <span class="size-lg-14 color-grey fold-title-container"><img src="image/Title-logo.svg"
                         alt="Title-Logo" class="me-2" width="24px" height="12px">Projects</span>
@@ -306,15 +308,19 @@
                             <div class="size-lg-14 color-grey Sub_title d_flex_align-center">
                                 <label>web app</label><span class="dot-separator"></span><label>2024</label>
                             </div>
-                            <h3 > </h3>
+                            <h3> </h3>
                             <h3 class="font-pop-semibold size-lg-22 project-title">Project Title</h3>
-                            <p class="font-pop-regular size-lg-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                            <p class="font-pop-regular size-lg-14">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries,</p>
                         </div>
-                        <img src="image/phil-ux-portfolio-example.webp" alt="project-thumbnail" class="project-thumbnail">
+                        <img src="image/phil-ux-portfolio-example.webp" alt="project-thumbnail"
+                            class="project-thumbnail">
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Footer Section -->
         <section class="col-md-12 footer-container border-gradient-green">
             <div class="row align-items-center justify-content-center pt-5">
@@ -322,7 +328,7 @@
                     <span class="size-lg-14 color-grey fold-title-container open-towork">
                         <div class="availability-indicator"></div>Open to Work
                     </span>
-                    <p class="font-pop-semibold size-lg-32 m-0 my-3">Open to new ideas, good conversations,
+                    <p class="custom-width font-pop-semibold size-lg-32 m-0 my-3">Open to new ideas, good conversations,
                         and even better coffee</p>
                     <div class="text-center my-3">
                         <button type="button" class="btn btn-secondary custom-sec-btn me-2">Resume</button>
@@ -354,8 +360,8 @@
                 <div class="row">
                     <div class="col-md-5">
                         <!-- <div class="position-relative ">
-                                    <img src="Image/3d" alt="partical" class="position-absolute custom-partical-pos ">
-                        </div> -->
+                                        <img src="Image/3d" alt="partical" class="position-absolute custom-partical-pos ">
+                            </div> -->
                     </div>
                     <div class="col-md-7">
                         <div class="offcanvas-body small col-md-12 p-0 overflow-clip">
@@ -415,6 +421,4 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-</body>
-
 </html>
