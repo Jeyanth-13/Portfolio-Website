@@ -16,7 +16,7 @@ function type() {
   }
 }
 
-// Keyword Carousel Animation
+// Keyword Animation
 document.addEventListener("DOMContentLoaded", type);
 const keywords = [
   "Designer",
@@ -40,97 +40,91 @@ setInterval(updateKeyword, 2500); // Change every 2.5 seconds
 
 const cursor = document.querySelector('.custom-cursor');
 
-window.addEventListener('mousemove', e => {
-  cursor.style.top = e.clientY + 'px';
-  cursor.style.left = e.clientX + 'px';
-});
 
-// // Animation for Heading Text (Product Designer)
-// const glowText = document.getElementById("glowText");
 
-// glowText.addEventListener("mousemove", (e) => {
-//   const rect = glowText.getBoundingClientRect();
-//   const x = e.clientX - rect.left;
-//   const y = e.clientY - rect.top;
 
-//   const xPercent = (x / rect.width) * 100;
-//   const yPercent = (y / rect.height) * 100;
 
-//   glowText.setAttribute("data-text", glowText.textContent);
-//   glowText.style.setProperty('--glow-x', `${xPercent}%`);
-//   glowText.style.setProperty('--glow-y', `${yPercent}%`);
 
-//   glowText.style.setProperty('--glow-opacity', 1);
-//   glowText.querySelector('::after');
-//   glowText.style.setProperty('--opacity', 1);
-//   glowText.style.setProperty('--hover', '1');
-//   glowText.style.setProperty('--position', `${xPercent}% ${yPercent}%`);
 
-//   glowText.style.setProperty('--glow-bg', `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(160, 255, 200, 0.8), transparent 40%)`);
-//   glowText.style.setProperty('--glow-opacity', `1`);
 
-//   glowText.style.setProperty('--background', `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(160, 255, 200, 0.8), transparent 40%)`);
-//   glowText.style.setProperty('--glow-position', `${xPercent}% ${yPercent}%`);
-//   glowText.style.setProperty('--glow-opacity', `1`);
 
-//   glowText.style.setProperty('--radial', `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(160, 255, 200, 0.9), transparent 40%)`);
 
-//   glowText.style.backgroundImage = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(160, 255, 200, 0.9), transparent 40%)`;
+
+
+
+
+
+// part -2
+// window.addEventListener('mousemove', e => {
+//   cursor.style.top = e.clientY + 'px';
+//   cursor.style.left = e.clientX + 'px';
 // });
 
-// glowText.addEventListener("mouseleave", () => {
-//   glowText.style.backgroundImage = `none`;
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   const titles = ["UX UI", "Product", "3D", "Graphic"];
+//   let currentIndex = 0;
+//   const titleEl = document.getElementById("role-title");
+
+//   // Insert the first text
+//   const firstSpan = document.createElement("span");
+//   firstSpan.textContent = titles[currentIndex];
+//   firstSpan.classList.add("active");
+//   titleEl.appendChild(firstSpan);
+
+//   function updateTitle() {
+//     const current = titleEl.querySelector(".active");
+//     const next = document.createElement("span");
+
+//     currentIndex = (currentIndex + 1) % titles.length;
+//     next.textContent = titles[currentIndex];
+//     titleEl.appendChild(next);
+
+//     // Trigger transitions
+//     requestAnimationFrame(() => {
+//       current.classList.remove("active");
+//       current.classList.add("out");
+//       next.classList.add("active");
+//     });
+
+//     // Remove the old element after transition ends
+//     setTimeout(() => current.remove(), 800);
+//   }
+
+//   setInterval(updateTitle, 2500); // duration before next word scrolls
 // });
 
-// Dynamic Title Animation
-const titles = [
-  "UX UI",
-  "Product",
-  "3D",
-];
-let currentIndex = 0;
-const titleEl = document.getElementById("role-title");
 
-function updateTextWithReveal() {
-  titleEl.classList.remove('show'); // fade out
-  setTimeout(() => {
-    currentIndex = (currentIndex + 1) % titles.length;
-    titleEl.textContent = titles[currentIndex];
-    titleEl.classList.add('show'); // fade in with animation
-  }, 300);
+// part -1
+// const titles = ["UX UI", "Product", "3D"];
+// let currentIndex = 0;
+// const titleEl = document.getElementById("role-title");
 
-  setTimeout(updateTextWithReveal, 3000); // loop
-}
-
-// Start initial animation
-setTimeout(() => {
-  titleEl.classList.add('show');
-  setTimeout(updateTextWithReveal, 5000);
-}, 500);
-
-
-// let dynamictext = 0;
 // function updateTitle() {
-// const roleTitle = document.getElementById("role-title");
+//   // Create the next element
+//   const nextEl = document.createElement("span");
+//   nextEl.textContent = titles[currentIndex];
+//   nextEl.classList.add("slide-in");
 
-//   // Clear current content
-//   roleTitle.innerHTML = "";
+//   // Insert next element below the current one
+//   titleEl.appendChild(nextEl);
 
-//   // Get next title and split into words
-//   const words = titles[dynamictext].split(" ");
+//   // Wait a moment to start slide-out of the previous one
+//   const previousEl = titleEl.querySelector(".slide-out");
+//   if (previousEl) previousEl.remove(); // remove any old ones
 
-//   // Create span for each word
-//   words.forEach((word, i) => {
-//     console.log(word, i);
-//     const span = document.createElement("span");
-//     span.style.animationDelay = `${i * 1}s`;
-//     span.textContent = `${word}`;
-//     span.classList.add("anime-text");
-//     roleTitle.appendChild(span);
-//   });
+//   const activeEl = titleEl.querySelector(".slide-in");
+//   if (activeEl && activeEl !== nextEl) {
+//     activeEl.classList.remove("slide-in");
+//     activeEl.classList.add("slide-out");
+//     setTimeout(() => activeEl.remove(), 600); // remove after anim completes
+//   }
 
-//   // Move to next
-//   dynamictext = (dynamictext + 1) % titles.length;
+//   // Prepare for next update
+//   currentIndex = (currentIndex + 1) % titles.length;
 // }
-// updateTitle(); // initial run
-// setInterval(updateTitle, 2000); // every 5s
+
+// // Start cycle
+// updateTitle();
+// setInterval(updateTitle, 3000);
+

@@ -355,41 +355,6 @@ ul li{
     padding-bottom: 0px;
   }
 }
-/* Ribbon Styles */
-.ribbon-section {
-  background: linear-gradient(to right, #0c1312, #0c3321);
-  rotate: 0deg;
-}
-.ribbon-trip {
-    background: linear-gradient(to right, #0e1618, #0f5132);
-    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-    rotate: 1deg;
-    width: 100%;
-    padding: 8px 0;
-    box-shadow: 0px 1px 2px #23b361 inset;
-}
-.ribbon-item {
-  color: #fff;
-  transition: all 0.3s ease;
-}
-.ribbon-item:hover {
-  color: #00ffff;
-  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
-}
-.ribbon-divider {
-  font-size: 1.2rem;
-  color: #00aaff;
-}
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-  will-change: transform, opacity;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* Project section style */
 .project-card {
@@ -436,6 +401,31 @@ ul li{
 }
 
 /* Keep hovered card bright, scaled, with overlay visible */
+.role-wrapper {
+  height: 1em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+#role-title span {
+  text-align: left;
+  opacity: 1;
+  transform: translateY(100%);
+  color: #37B46D; /* ensure visible - adjust to your theme */
+  transition: transform 0.8s cubic-bezier(0.45, 0, 0.55, 1), opacity 0.8s ease;
+}
+
+#role-title span.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#role-title span.out {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Glowline */
 .card-hover-group .project-card:hover {
   opacity: 1;
   z-index: 2;
@@ -452,6 +442,7 @@ ul li{
   animation: glowIn 1s ease forwards;
   animation-delay: calc(var(--i) * 50s);
   transition: text-shadow 0.3s ease-in-out;
+  color: #37B46D;
 }
 @keyframes glowIn {
   0% {
@@ -468,15 +459,10 @@ ul li{
   }
   100% {
     opacity: 1;
-    background: linear-gradient(90deg, #087738 0%, #87C696 50%, #C0E6B9 75%, #E9F8E7 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #37B46D;
   }
 }
- #role-title{
-    transition: transform 0.6s ease;
- }
+
 .glow-line:hover .glow-word {
   text-shadow:
       0 0 5px #00ff95,
